@@ -2,17 +2,23 @@ const creditAmount = document.getElementById('creditAmount');
 const paymentPeriod = document.getElementById('paymentPeriod');
 
 creditAmount.addEventListener('change', () => {
+    calculateCredit()
     if (creditAmount.value < 1000) {
+        alert('Значення не може бути менше 1000 перевірте дані)))')
         creditAmount.value = 1000;
     } else if (creditAmount.value > 50000) {
+        alert('Значення не може бути більше 50000 перевірте дані)))')
         creditAmount.value = 50000;
     }
   });
 
 paymentPeriod.addEventListener('change', () => {
+    calculateCredit()
     if (paymentPeriod.value < 7) {
+        alert('Значення не може бути менше 7 перевірте дані)))')
         paymentPeriod.value = 7;
     } else if (paymentPeriod.value > 60) {
+        alert('Значення не може бути більше 60 перевірте дані)))')
         paymentPeriod.value = 60;
     }
   });
