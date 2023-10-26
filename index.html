@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator | Belenok Dmytro</title>
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,regular,500,600,700" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <main class="calculator">
+            <div class="calculator__container container">
+                <h1 class="calculator__title">Кредитний калькулятор</h1>
+                <div class="calculator__inputs">
+                    <div class="calculator__amount">
+                        <label for="creditAmount">Сума кредиту</label>
+                        <input type="number" id="creditAmount" min="1000" max="50000" step="100" required>
+                    </div>
+                    <div class="calculator__period">
+                        <label for="paymentPeriod">Період погашення (днів)</label>
+                        <input type="number" id="paymentPeriod" min="7" max="60" step="1" required>
+                    </div>
+                </div>
+                <p class='calculator__daily' id="dailyPayment"></p>
+                <p class='calculator__total' id="totalPayment"></p>
+                <button class="credit__btn" onclick="calculateCredit()">Отримати кредит</button>               
+            </div>
+        </main>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+</html>

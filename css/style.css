@@ -1,0 +1,121 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+html,
+body {
+  height: 100%;
+  line-height: 1;
+  font-size: 15px;
+  font-family: 'Comfortaa';
+}
+button,
+input {
+	font-weight: inherit;
+	font-size: inherit;
+	color: inherit;
+	font-family: inherit;
+}
+
+button {
+	cursor: pointer;
+	background-color: inherit;
+}
+.wrapper{
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.container{
+    max-width: 1046px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: content-box;
+}
+.calculator__title{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.credit__btn{
+    padding: 10px 15px;
+    border-radius: 15px;
+    margin-top: 20px;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+}
+.calculator{
+    padding: 30px;
+}
+.calculator__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.calculator__inputs{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.calculator__amount,
+.calculator__period{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.calculator__amount label,
+.calculator__period label{
+    font-size: 20px;
+}
+.calculator__amount input:focus,
+.calculator__period input:focus{
+    border: 0;
+}
+
+.calculator__amount input,
+.calculator__period input{
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.calculator__daily,
+.calculator__total{
+    font-size: 15px;
+    margin-top: 5px;
+}
+.calculator__daily{
+    margin-top: 15px;
+}
